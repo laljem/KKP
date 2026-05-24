@@ -376,7 +376,6 @@ header{
   background:gold;
   color:black;
 }
-}
 
 .gallery-title{
   text-align:center;
@@ -410,43 +409,34 @@ color:white;
 
 @media(max-width:768px){
 
-  nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  .top-logo{
+    width:70px;
+    top:15px;
+    left:15px;
+    z-index:1000;
+  }
 
-    padding-top:110px;
-    position:relative;
+  nav{
+    padding-top:100px;
+    flex-direction:column;
+    gap:15px;
   }
 
   nav ul{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-
-    gap:10px;
-    margin-top:10px;
+    gap:12px;
   }
 
   nav ul li{
-    margin-left:0;
-  }
-
-  .top-logo{
-    width:75px;
-
-    position:absolute;
-    top:15px;
-    left:15px;
+    margin:0;
   }
 
   .logo{
     font-size:22px;
     text-align:center;
-  }
-
-  .hero h2{
-    font-size:32px;
+    padding:0 10px;
   }
 
 }
