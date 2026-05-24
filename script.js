@@ -23,3 +23,15 @@ document.addEventListener("mousemove", (e) => {
     `${50 + x * 10}% ${50 + y * 10}%`;
 
 });
+
+function openImage(src){
+
+  document.getElementById("lightbox").style.display = "flex";
+
+  document.getElementById("lightbox-img").src = src;
+}
+
+function closeImage(){
+
+  document.getElementById("lightbox").style.display = "none";
+}

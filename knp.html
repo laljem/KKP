@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KKP Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="gallery-title">
+  KKP Gallery
+</h1>
+
+<div class="gallery">
+
+    <img src="images1/photo2.jpg"
+    onclick="openImage(this.src)">
+
+
+</div>
+
+<a href="gallery.html" class="back-btn">
+  ← Back to Gallery
+</a>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" onclick="closeImage()">
+
+  <span id="close-btn">✖</span>
+
+  <img id="lightbox-img">
+
+</div>
+
+
+<!-- SCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -109,6 +109,7 @@ nav ul li a:hover{
 .section{
   padding:80px 10%;
   text-align:center;
+  background:white;
 }
 
 .section h2{
@@ -180,12 +181,12 @@ nav ul li a:hover{
     justify-content:flex-start;
     align-items:center;
 
-    gap:10px;
+    gap:5px;
 }
 
 .card img{
-    width:100px;
-    height:100px;
+    width:150px;
+    height:150px;
 
     object-fit:cover;
 
@@ -321,3 +322,131 @@ header{
   color:white;
 }
 
+/* LIGHTBOX */
+
+#lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#lightbox img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+#close-btn{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.back-btn{
+  position:absolute;
+  top:20px;
+  left:20px;
+
+  display:inline-block;
+  padding:12px 25px;
+
+  background:#222;
+  color:white;
+
+  text-decoration:none;
+  border-radius:10px;
+
+  transition:0.3s;
+  font-size:18px;
+
+  z-index:1000;
+}
+
+.back-btn:hover{
+  background:gold;
+  color:black;
+}
+}
+
+.gallery-title{
+  text-align:center;
+  font-size:50px;
+  margin-top:40px;
+  margin-bottom:30px;
+  color:white;
+  letter-spacing:3px;
+  text-transform:uppercase;
+
+  background:linear-gradient(
+    90deg,
+    #ffffff,
+    #cfcfcf
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:
+    0 4px 15px rgba(0,0,0,0.3);
+}
+
+body{
+  background:#111;
+}
+
+#contact h2{  
+color:white;
+}
+
+@media(max-width:768px){
+
+  nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding-top:110px;
+    position:relative;
+  }
+
+  nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:10px;
+    margin-top:10px;
+  }
+
+  nav ul li{
+    margin-left:0;
+  }
+
+  .top-logo{
+    width:75px;
+
+    position:absolute;
+    top:15px;
+    left:15px;
+  }
+
+  .logo{
+    font-size:22px;
+    text-align:center;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+}
