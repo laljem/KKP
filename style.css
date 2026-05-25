@@ -477,3 +477,40 @@ color:white;
   }
 
 }
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    text-align:center;
+    padding-top:80px;
+  }
+
+  nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+
+    margin-top:15px;
+  }
+
+  nav ul li{
+    margin:0;
+  }
+
+}
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .top-logo{
+    width:70px;
+  }
+
+  .btn{
+    padding:8px 18px;
+    font-size:14px;
+  }
+
+}
